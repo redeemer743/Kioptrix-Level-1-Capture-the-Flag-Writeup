@@ -117,6 +117,7 @@ As final proof of a complete system compromise, the `/etc/shadow` file was dumpe
 root:\$1XROmcfDXtF93GqnLHOJeGRHpaNyIs0:14513:0:99999:7:::
 john:1zL4.MR4t\$26N4YpTGceBO0gTX6TAky1:14513:0:99999:7:::
 harold:\$1Xx6dZdOdIMOGACl3r757dv17LZ9010:14513:0:99999:7:::
+
 <!-- 🖼️ PLACE THIRD IMAGE HERE -->
 ![Root Mail Flag](img/loot.png)
 *Figure 4: Post-Exploitation Loot.*
