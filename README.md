@@ -99,6 +99,7 @@ root
 
 ---
 
+
 ## 🏁 Flag Capture
 The final confirmation flag was uncovered by checking the root account's local mail spool (`/var/spool/mail/root`):
 
@@ -107,6 +108,18 @@ The final confirmation flag was uncovered by checking the root account's local m
 <!-- 🖼️ PLACE THIRD IMAGE HERE -->
 ![Root Mail Flag](img/mail_flag.png)
 *Figure 3: Viewing the final congratulatory message in the root mailbox.*
+
+
+## 🔓 Stage 4: Post-Exploitation Loot
+As final proof of a complete system compromise, the `/etc/shadow` file was dumped, revealing the MD5-crypt password hashes for the `root`, `john`, and `harold` accounts:
+
+```text
+root:\$1XROmcfDXtF93GqnLHOJeGRHpaNyIs0:14513:0:99999:7:::
+john:1zL4.MR4t\$26N4YpTGceBO0gTX6TAky1:14513:0:99999:7:::
+harold:\$1Xx6dZdOdIMOGACl3r757dv17LZ9010:14513:0:99999:7:::
+<!-- 🖼️ PLACE THIRD IMAGE HERE -->
+![Root Mail Flag](img/loot.png)
+*Figure 4: Post-Exploitation Loot.*
 
 ## 📚 Detailed Exploit Breakdowns
 For a deep dive into how each exploit works and their source paths:
