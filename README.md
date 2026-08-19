@@ -119,7 +119,7 @@ john:1zL4.MR4t\$26N4YpTGceBO0gTX6TAky1:14513:0:99999:7:::
 harold:\$1Xx6dZdOdIMOGACl3r757dv17LZ9010:14513:0:99999:7:::
 
 <!-- 🖼️ PLACE FOURTH IMAGE HERE -->
-![Loot](img/loot.png)
+![Loot](img/Loot_Post.png)
 *Figure 4: Post-Exploitation Loot.*
 
 ## 📚 Detailed Exploit Breakdowns
