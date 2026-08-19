@@ -90,9 +90,9 @@ root
 ```
 
 <!-- 🖼️ PLACE SECOND IMAGE HERE -->
-![Privilege Escalation to Root](root_privesc.png)
-![Privilege Escalation to Root](root_privesc2.png)
-![Privilege Escalation to Root](root_privesc3.png)
+![Privilege Escalation to Root](img/root_privesc.png)
+![Privilege Escalation to Root](img/root_privesc2.png)
+![Privilege Escalation to Root](img/root_privesc3.png)
 *Figure 2: Elevating access from the apache user to a full root shell using the ptrace exploit.*
 
 ---
