@@ -22,7 +22,8 @@ nmap -sV -A 192.168.0.23
 The version of OpenSSL in use is extremely old and known to be vulnerable to a heap overflow protocol flaw.
 
 <!-- 🖼️ PLACE FIRST IMAGE HERE -->
-![Nmap Scan Results](nmap_scan.png)
+![Nmap Scan Results](img/nmap_scan.png)
+![Nmap Scan Results](img/nmap_scan2.png)
 *Figure 1: Initial network enumeration showing outdated Apache and OpenSSL versions.*
 
 ---
