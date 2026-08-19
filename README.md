@@ -1,4 +1,4 @@
-# Kioptrix: Level 1 (#1) - Capture the Flag Writeup
+# Kioptrix: Level 1 (#1) - Capture the Flag Walkthrough
 
 A complete walkthrough of the Kioptrix Level 1 CTF challenge, demonstrating remote code execution via a legacy OpenSSL vulnerability and local privilege escalation using a kernel exploit.
 
@@ -20,6 +20,10 @@ nmap -sV -A 192.168.0.23
 * **Port 443/tcp:** Apache 1.3.20 / mod_ssl 2.8.4 / OpenSSL 0.9.6b
 
 The version of OpenSSL in use is extremely old and known to be vulnerable to a heap overflow protocol flaw.
+
+<!-- 🖼️ PLACE FIRST IMAGE HERE -->
+![Nmap Scan Results](nmap_scan.png)
+*Figure 1: Initial network enumeration showing outdated Apache and OpenSSL versions.*
 
 ---
 
@@ -59,15 +63,8 @@ Linux kioptrix.level1 2.4.7-10 #1 Thu Sep 6 16:46:36 EDT 2001 i686 unknown
 
 The system was found running Linux Kernel **2.4.7-10**, which is vulnerable to a ptrace race condition local privilege escalation flaw (**CVE-2003-0127**).
 
-### 📂 File Transfer:
-Because the target lacked modern SSL capabilities to download directly from external sites like Pastebin, a local Python HTTP server was launched on the attacker's Kali machine:
-
-```bash
-# On Kali Host
-python3 -m http.server 80
-```
-
-The exploit (`ptrace.c`) was then pulled to the target's `/tmp` directory, compiled, and executed:
+### 📂 File Transfer & Execution:
+Because the target lacked modern SSL capabilities to download directly from external sites like Pastebin, a local Python HTTP server was launched on the attacker's Kali machine to transfer the payload.
 
 ```bash
 # On Target Shell
@@ -91,11 +88,19 @@ bash-2.05\$ whoami
 root
 ```
 
+<!-- 🖼️ PLACE SECOND IMAGE HERE -->
+![Privilege Escalation to Root](root_privesc.png)
+*Figure 2: Elevating access from the apache user to a full root shell using the ptrace exploit.*
+
 ---
 
 ## 🏁 Flag Capture
 The final confirmation flag was uncovered by checking the root account's local mail spool (`/var/spool/mail/root`):
 
 > **"If you are reading this, you got root. Congratulations. Level 2 won't be as easy..."**
+
+<!-- 🖼️ PLACE THIRD IMAGE HERE -->
+![Root Mail Flag](mail_flag.png)
+*Figure 3: Viewing the final congratulatory message in the root mailbox.*
 
 🎉 **Machine 100% Compromised.**
