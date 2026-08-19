@@ -64,6 +64,8 @@ Linux kioptrix.level1 2.4.7-10 #1 Thu Sep 6 16:46:36 EDT 2001 i686 unknown
 
 The system was found running Linux Kernel **2.4.7-10**, which is vulnerable to a ptrace race condition local privilege escalation flaw (**CVE-2003-0127**).
 
+**Local Kali Location:** `/usr/share/exploitdb/exploits/linux/local/3.c`
+
 ### 📂 File Transfer & Execution:
 Because the target lacked modern SSL capabilities to download directly from external sites like Pastebin, a local Python HTTP server was launched on the attacker's Kali machine to transfer the payload.
 
