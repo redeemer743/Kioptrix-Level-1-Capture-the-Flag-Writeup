@@ -110,8 +110,8 @@ The final confirmation flag was uncovered by checking the root account's local m
 
 ## 📚 Detailed Exploit Breakdowns
 For a deep dive into how each exploit works and their source paths:
-* [OpenFuck Exploit Details](OpenFuck_notes.md)
-* [Ptrace-Kmod Exploit Details](Ptrace_Notes.md)
+* [OpenFuck Exploit Details](https://github.com/redeemer743/Kioptrix-Level-1-Capture-the-Flag-Writeup/blob/main/OpenFuck_Notes.md)
+* [Ptrace-Kmod Exploit Details](https://github.com/redeemer743/Kioptrix-Level-1-Capture-the-Flag-Writeup/blob/main/Ptrace_Notes.md)
 
 
 🎉 **Machine 100% Compromised.**
