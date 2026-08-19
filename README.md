@@ -103,7 +103,7 @@ The final confirmation flag was uncovered by checking the root account's local m
 > **"If you are reading this, you got root. Congratulations. Level 2 won't be as easy..."**
 
 <!-- 🖼️ PLACE THIRD IMAGE HERE -->
-![Root Mail Flag](mail_flag.png)
+![Root Mail Flag](img/mail_flag.png)
 *Figure 3: Viewing the final congratulatory message in the root mailbox.*
 
 🎉 **Machine 100% Compromised.**
